@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class SlugService
 {
 
-    public function generateUnique($title, $ignoreId)
+    public function generateUnique($title, $ignoreId = null)
     {
 
         $baseSlug = Str::slug($title);
